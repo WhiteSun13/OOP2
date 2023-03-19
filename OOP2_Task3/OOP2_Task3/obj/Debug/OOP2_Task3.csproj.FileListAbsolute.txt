@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\bin\Debug\OOP2_Task3.exe.config
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\bin\Debug\OOP2_Task3.exe
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\bin\Debug\OOP2_Task3.pdb
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.Form1.resources
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.Properties.Resources.resources
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.exe
+C:\Users\Admin\source\repos\OOP2_Task3\OOP2_Task3\obj\Debug\OOP2_Task3.pdb

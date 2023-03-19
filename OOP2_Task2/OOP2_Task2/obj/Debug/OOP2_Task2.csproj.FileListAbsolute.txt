@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\bin\Debug\OOP2_Task2.exe.config
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\bin\Debug\OOP2_Task2.exe
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\bin\Debug\OOP2_Task2.pdb
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.Form1.resources
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.Properties.Resources.resources
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.exe
+C:\Users\Admin\source\repos\OOP2_Task2\OOP2_Task2\obj\Debug\OOP2_Task2.pdb
