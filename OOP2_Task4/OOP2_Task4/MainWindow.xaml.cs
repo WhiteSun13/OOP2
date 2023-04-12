@@ -124,51 +124,82 @@ namespace OOP2_Task4
             initializeGrid(grid2, matrix2);
         }
 
+        // Обработчик нажатия на кнопку "Умножить матрицы" считывает значения из двух сеток и перемножает их
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
+            // Получаем значения из первой и второй сеток
             matrix1 = getValuesFromGrid(grid1, matrix1);
             matrix2 = getValuesFromGrid(grid2, matrix2);
+            // Создаем массив для результата умножения
             result = new double[matrix1.GetLength(0), matrix2.GetLength(1)];
+            // Получаем размерности матриц
             int m1columns_m2rows, m1rows, m2columns;
             m1columns_m2rows = matrix1.GetLength(1);
             m1rows = matrix1.GetLength(0);
             m2columns = matrix2.GetLength(1);
-            for (int row = 0; row < m1rows; row++)
+            // Проходим по всем элементам результирующей матрицы
+            try
             {
-                for (int column = 0; column < m2columns; column++)
+                for (int row = 0; row < m1rows; row++)
                 {
-                    double accumulator = 0;
-                    for (int cell = 0; cell < m1columns_m2rows; cell++)
+                    for (int column = 0; column < m2columns; column++)
                     {
-                        accumulator += matrix1[row, cell] * matrix2[cell, column];
+                        // Вычисляем значение элемента результирующей матрицы
+                        double accumulator = 0;
+                        for (int cell = 0; cell < m1columns_m2rows; cell++)
+                        {
+                            accumulator += matrix1[row, cell] * matrix2[cell, column];
+                        }
+                        result[row, column] = accumulator;
                     }
-                    result[row, column] = accumulator;
                 }
             }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
+            // Отображаем результат в третьей сетке
             initializeGrid(Grid3, result);
         }
 
+        // Обработчик нажатия на кнопку "Случайные значения" генерирует случайные значения для двух матриц и перемножает их
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
+            // Генерируем случайные значения для первой и второй матриц
             matrix1 = getRandomValuesFromGrid(grid1, matrix1);
             matrix2 = getRandomValuesFromGrid(grid2, matrix2);
+            // Обновление матриц
+            initializeGrid(grid1, matrix1);
+            initializeGrid(grid2, matrix2);
+            // Создаем массив для результата умножения
             result = new double[matrix1.GetLength(0), matrix2.GetLength(1)];
+            // Получаем размерности матриц
             int m1columns_m2rows, m1rows, m2columns;
             m1columns_m2rows = matrix1.GetLength(1);
             m1rows = matrix1.GetLength(0);
             m2columns = matrix2.GetLength(1);
-            for (int row = 0; row < m1rows; row++)
+            // Проходим по всем элементам результирующей матрицы
+            try
             {
-                for (int column = 0; column < m2columns; column++)
+                for (int row = 0; row < m1rows; row++)
                 {
-                    double accumulator = 0;
-                    for (int cell = 0; cell < m1columns_m2rows; cell++)
+                    for (int column = 0; column < m2columns; column++)
                     {
-                        accumulator += matrix1[row, cell] * matrix2[cell, column];
+                        // Вычисляем значение элемента результирующей матрицы
+                        double accumulator = 0;
+                        for (int cell = 0; cell < m1columns_m2rows; cell++)
+                        {
+                            accumulator += matrix1[row, cell] * matrix2[cell, column];
+                        }
+                        result[row, column] = accumulator;
                     }
-                    result[row, column] = accumulator;
                 }
             }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
+            // Отображаем результат в третьей сетке
             initializeGrid(Grid3, result);
         }
     }

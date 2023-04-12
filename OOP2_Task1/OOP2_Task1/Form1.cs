@@ -69,65 +69,51 @@ namespace OOP2_Task1
         }
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text, out var a))
+            if (int.TryParse(textBox1.Text, out var a) && int.TryParse(textBox2.Text, out var b))
             {
-                if (int.TryParse(textBox2.Text, out var b))
-                {
-                    Result.Text = "НОД (метод Евклида) = " + NOD(a, b); return;
-                }
+                if (a==0 || b == 0){ MessageBox.Show("На ноль делить нельзя!"); return; }
+                Result.Text = "НОД (метод Евклида) = " + NOD(a, b);
             }
-            MessageBox.Show("Неверный ввод");
+            else
+            {
+                MessageBox.Show("Неверный ввод");
+            }
         }
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text, out var a))
+            if (int.TryParse(textBox1.Text, out var a) && int.TryParse(textBox2.Text, out var b) && int.TryParse(textBox3.Text, out var c))
             {
-                if (int.TryParse(textBox2.Text, out var b))
-                {
-                    if (int.TryParse(textBox3.Text, out var c))
-                    {
-                        Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c); return;
-                    }
-                }
+                if (a == 0 || b == 0 || c == 0) { MessageBox.Show("На ноль делить нельзя!"); return; }
+                Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c);
             }
-            MessageBox.Show("Неверный ввод");
+            else
+            {
+                MessageBox.Show("Неверный ввод");
+            }
         }
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text, out var a))
+            if (int.TryParse(textBox1.Text, out var a) && int.TryParse(textBox2.Text, out var b) && int.TryParse(textBox3.Text, out var c) && int.TryParse(textBox4.Text, out var d))
             {
-                if (int.TryParse(textBox2.Text, out var b))
-                {
-                    if (int.TryParse(textBox3.Text, out var c))
-                    {
-                        if (int.TryParse(textBox4.Text, out var d))
-                        {
-                            Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c, d); return;
-                        }
-                    }
-                }
+                if (a == 0 || b == 0 || c == 0 || d == 0) { MessageBox.Show("На ноль делить нельзя!"); return; }
+                Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c, d);
             }
-            MessageBox.Show("Неверный ввод");
+            else
+            {
+                MessageBox.Show("Неверный ввод");
+            }
         }
         private void btn4_Click(object sender, EventArgs q)
         {
-            if (int.TryParse(textBox1.Text, out var a))
+            if (int.TryParse(textBox1.Text, out var a) && int.TryParse(textBox2.Text, out var b) && int.TryParse(textBox3.Text, out var c) && int.TryParse(textBox4.Text, out var d) && int.TryParse(textBox5.Text, out var e))
             {
-                if (int.TryParse(textBox2.Text, out var b))
-                {
-                    if (int.TryParse(textBox3.Text, out var c))
-                    {
-                        if (int.TryParse(textBox4.Text, out var d))
-                        {
-                            if (int.TryParse(textBox5.Text, out var e))
-                            {
-                                Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c, d, e); return;
-                            }
-                        }
-                    }
-                }
+                if (a == 0 || b == 0 || c == 0 || d == 0 || e == 0) { MessageBox.Show("На ноль делить нельзя!"); return; }
+                Result.Text = "НОД (метод Евклида) = " + NOD(a, b, c, d, e);
             }
-            MessageBox.Show("Неверный ввод");
+            else
+            {
+                MessageBox.Show("Неверный ввод");
+            }
         }
     }
 }
